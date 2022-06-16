@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav-items {
+    @apply relative hover:after:w-full hover:after:h-[1px] hover:after:bg-white after:content-[''] after:absolute after:w-0 after:h-[1px] after:block after:bottom-0 after:transition-all after:duration-500 after:ease-out;
+  }
+}
+
 html,
 body {
   padding: 0;

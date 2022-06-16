@@ -1,4 +1,3 @@
-import { Head } from "next/document";
 import Header from "../header/Header";
 
 type LayoutProps = {

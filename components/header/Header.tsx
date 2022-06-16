@@ -43,7 +43,7 @@ const Header = () => {
           </button>
           <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
             <ul className="flex flex-col relative mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-              <li className="hover::after:w-full hover::after:h-[1px] hover::after:bg-white after:content-[''] after:absolute after:w-0 after:h-[1px] after:block after:bottom-1/4 after:transition-all">
+              <li className="nav-items">
                 <a
                   href="#"
                   className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-50 md:p-0 dark:text-white"
@@ -52,7 +52,7 @@ const Header = () => {
                   Home
                 </a>
               </li>
-              <li>
+              <li className="nav-items">
                 <a
                   href="#"
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -60,7 +60,7 @@ const Header = () => {
                   About
                 </a>
               </li>
-              <li>
+              <li className="nav-items">
                 <a
                   href="#"
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -68,7 +68,7 @@ const Header = () => {
                   Services
                 </a>
               </li>
-              <li>
+              <li className="nav-items">
                 <a
                   href="#"
                   className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -76,7 +76,7 @@ const Header = () => {
                   Pricing
                 </a>
               </li>
-              <li>
+              <li className="nav-items">
                 <a
                   href="#"
                   className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
