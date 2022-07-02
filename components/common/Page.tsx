@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react'
-import Layout from './Layout'
+import Layout from './layout'
 
 export default function Page() {
   return {

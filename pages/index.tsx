@@ -1,20 +1,34 @@
-import type { NextPage } from "next";
-import Layout from "../components/common/Layout";
+import type {
+  GetStaticProps,
+  InferGetStaticPropsType,
+  NextPage,
+} from "next";
+import dynamic from "next/dynamic";
+import Layout from "../components/common/layout";
 import BannerPost from "../components/post/banner-post";
 import Post from "../components/post/post";
+import { loadPosts } from "../lib/load-posts";
 
-const Home: NextPage = () => {
-
-
+const Home: NextPage = ({
+  posts,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Layout>
       <div className="h-full px-2 sm:px-4 py-2.5">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <BannerPost></BannerPost>
-          <div className="flex flex-wrap mt-10 px-16 w-full">
-            <Post imgSrc="/imgs/post-1.jpg" title="I would like to die on Mars. Just not on impact" date="December 26, 2022"></Post>
-            <Post imgSrc="/imgs/post-2.jpg" title="Life is too short for long-term grudges." date="December 26, 2022"></Post>
-            <Post imgSrc="/imgs/post-3.jpg" title="Don't go through life, grow through life" date="December 26, 2022"></Post>
+          <div className="grid grid-cols-3 grid-flow-col flex-wrap mt-10 px-16 w-full">
+            {posts.map((p: any) => {
+              return (
+                <Post
+                  id={p.id}
+                  imgSrc={p.coverPhoto.url}
+                  title={p.title}
+                  date={p.datePublished}
+                  slug={p.slug}
+                ></Post>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -22,4 +36,14 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export const getStaticProps: GetStaticProps = async (context) => {
+  const posts = await loadPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false });
