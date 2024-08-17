@@ -13,10 +13,10 @@ export interface CardProps {
 
 const Card = () => {
   return (
-    <div className={"flex md:flex-row flex-col items-center gap-y-8 w-full"}>
+    <div className={"flex md:flex-row flex-col md:items-center gap-y-8 w-full"}>
       <div
         id={"title-section"}
-        className={"flex flex-col items-start text-start gap-y-4 w-1/2"}
+        className={"flex flex-col items-start text-start gap-y-4"}
       >
         <p className={"text-3xl font-bold "}>Recent Projects That Inspire</p>
         <p className={"text-md"}>
@@ -24,10 +24,10 @@ const Card = () => {
           and innovative solutions. Click on the project to learn more.
         </p>
         <div className={"flex-row space-x-2"}>
-          <Link href={""}>
+          <Link href={"/blog"}>
             <Button variant={"outline"}>View all</Button>
           </Link>
-          <Link href={""}>
+          <Link href={"/blog/net-8-new-features"}>
             <Button variant={"ghost"} className={"gap-x-2"}>
               Read more
               <svg

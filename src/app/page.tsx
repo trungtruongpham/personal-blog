@@ -3,7 +3,7 @@ import Card from "@/components/card/card";
 
 export default function Home() {
   return (
-    <div className="px-4 py-2 text-center md:w-3/4 mx-auto space-y-8">
+    <div className="px-4 py-2 md:w-3/4 md:mx-auto">
       <Banner />
       <div className={"space-y-16"}>
         <Card></Card>

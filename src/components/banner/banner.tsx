@@ -5,7 +5,7 @@ import BannerImage from "../../../public/banner-image.jpg";
 
 function Banner() {
   return (
-    <div className={"space-y-8"}>
+    <div className={"space-y-8 text-center"}>
       <div id="banner-description">
         <h1 className={"text-2xl font-extrabold md:text-3xl pb-4"}>
           Welcome to my Developer Blog!
