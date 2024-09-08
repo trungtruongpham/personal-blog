@@ -17,10 +17,10 @@ export default function Header() {
 
   useEffect(() => {
     if (windowSize.width && windowSize.width > 760) {
-      setIsShowMobileHeader(false);
+      setIsShowMobileHeader(true);
       setRotate(0);
     } else {
-      setIsShowMobileHeader(true);
+      setIsShowMobileHeader(false);
     }
   }, [windowSize.width]);
 
@@ -37,7 +37,7 @@ export default function Header() {
         "md:flex px-4 py-2 sticky top-0 dark:bg-black/30 bg-white/30 backdrop-blur-xl border-b-0"
       }
     >
-      <div className={"md:flex md:w-3/4 justify-between w-full mx-auto px-1"}>
+      <div className={"md:flex md:w-10/12 justify-between w-full mx-auto px-1"}>
         <div className="flex justify-between items-center mb-4">
           <Link href={"/"}>
             <Avatar>

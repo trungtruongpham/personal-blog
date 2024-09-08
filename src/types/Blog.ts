@@ -8,4 +8,5 @@ export default interface Blog {
   author: Author;
   publishedAt: Date;
   content: string;
+  slug: string;
 }
