@@ -58,8 +58,8 @@ const blog: Blog = {
   slug: "hello-world",
 };
 
-async function DetailPage({ slug }: { slug: string }) {
-  const blog = await getBlog(slug);
+async function DetailPage({ params }: { params: { slug: string } }) {
+  const blog = await getBlog(params.slug);
 
   return (
     <div className={"md:flex md:flex-col px-4 py-2 mt-8 gap-y-16"}>
@@ -137,6 +137,7 @@ const getBlogData = async () => {
 };
 
 const getBlog = async (slug: string) => {
+  console.log(slug);
   return blog;
 };
 
