@@ -35,6 +35,11 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  variants: {
+    extend: {
+      backdropFilter: ["responsive"],
+    },
+  },
 } satisfies Config;
 
 export default config;
