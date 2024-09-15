@@ -13,7 +13,11 @@ export interface CardProps {
 
 const Card = () => {
   return (
-    <div className={"flex md:flex-row flex-col md:items-center gap-y-8 w-full"}>
+    <div
+      className={
+        "flex md:flex-row flex-col md:items-center md:justify-between gap-8 w-full"
+      }
+    >
       <div
         id={"title-section"}
         className={"flex flex-col items-start text-start gap-y-4"}

@@ -4,8 +4,8 @@ import Link from "next/link";
 import SocialIcons from "@/components/social-icons/social-icons";
 
 export const Footer = () => (
-  <footer className="w-full px-3 mb-16">
-    <div className="flex flex-col md:w-10/12 md:mx-auto items-center gap-y-4 md:flex-row md:justify-between md:items-center my-8">
+  <footer className="w-full mb-16 md:px-[20px]">
+    <div className="flex flex-col md:w-10/12 mx-auto items-center gap-y-4 md:flex-row md:justify-between md:items-center my-8">
       <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" />
         <AvatarFallback>PTT</AvatarFallback>

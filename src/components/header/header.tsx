@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <div
       className={
-        "md:flex px-4 py-2 sticky top-0 dark:bg-black/30 bg-white/30 backdrop-blur-xl border-b-0"
+        "md:flex px-4 py-2 sticky top-0 dark:bg-black/75 bg-white/30 backdrop-blur-3xl border-b-0"
       }
     >
       <div className={"md:flex md:w-10/12 justify-between w-full mx-auto px-1"}>

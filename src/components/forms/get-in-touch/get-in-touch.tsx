@@ -61,7 +61,11 @@ const GetInTouchForm = () => {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your name" {...field} />
+                  <Input
+                    className={"bg-background dark:bg-background"}
+                    placeholder="Your name"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -75,6 +79,7 @@ const GetInTouchForm = () => {
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
+                    className={"bg-background dark:bg-background"}
                     type="email"
                     placeholder="Your email address"
                     {...field}
@@ -91,7 +96,12 @@ const GetInTouchForm = () => {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Your message" {...field} rows={4} />
+                  <Textarea
+                    className={"bg-background dark:bg-background"}
+                    placeholder="Your message"
+                    {...field}
+                    rows={4}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
