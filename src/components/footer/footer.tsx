@@ -26,7 +26,7 @@ export const Footer = () => (
       </div>
       <SocialIcons></SocialIcons>
     </div>
-    <div className="flex flex-col-reverse md:flex-row items-center gap-y-2 pt-8 md:flex-row md:gap-x-4 md:justify-center md:w-10/12 w-full mx-auto border-t-2 border-black dark:border-white">
+    <div className="flex flex-col-reverse items-center gap-y-2 pt-8 md:flex-row md:gap-x-4 md:justify-center md:w-10/12 w-full mx-auto border-t-2 border-black dark:border-white">
       <p>2024 © PTT. All rights reserved.</p>
       <Link href={"/"} className="underline underline-offset-4">
         Privacy Policy

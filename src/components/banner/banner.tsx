@@ -1,7 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import BannerImage from "../../../public/banner-image.jpg";
 
 function Banner() {
   return (
@@ -19,11 +17,11 @@ function Banner() {
         <Button>Learn More</Button>
         <Button variant={"outline"}>Sign Up</Button>
       </div>
-      <Image
-        src={BannerImage}
-        alt={"Banner image"}
-        className={"max-h-96"}
-      ></Image>
+      {/*<Image*/}
+      {/*  src={BannerImage}*/}
+      {/*  alt={"Banner image"}*/}
+      {/*  className={"max-h-96"}*/}
+      {/*></Image>*/}
     </div>
   );
 }

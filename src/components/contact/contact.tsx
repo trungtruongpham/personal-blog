@@ -27,7 +27,7 @@ export default function Contact() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight">Get in Touch</h2>
             <p className="text-muted-foreground">
-              We&apos;d love to hear from you. Contact us for any inquiries.
+              I&apos;d love to hear from you. Contact us for any inquiries.
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ export default function Contact() {
                 <div>
                   <p className="font-semibold">Email</p>
                   <p className="text-sm text-muted-foreground">
-                    Send us an email
+                    Send me an email
                   </p>
                   <a
                     href="mailto:hello@relume.io"

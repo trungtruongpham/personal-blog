@@ -28,10 +28,10 @@ const Card = () => {
           and innovative solutions. Click on the project to learn more.
         </p>
         <div className={"flex-row space-x-2"}>
-          <Link href={"/blog"}>
+          <Link href={"/blogs"}>
             <Button variant={"outline"}>View all</Button>
           </Link>
-          <Link href={"/blog/net-8-new-features"}>
+          <Link href={"/blogs/net-8-new-features"}>
             <Button variant={"ghost"} className={"gap-x-2"}>
               Read more
               <svg

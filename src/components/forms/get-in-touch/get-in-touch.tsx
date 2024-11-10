@@ -42,7 +42,7 @@ const GetInTouchForm = () => {
   }
 
   return (
-    <div className="flex flex-col md:flex-row py-8 w-full md:w-10/12 mx-auto">
+    <div className="flex flex-col md:flex-row py-8 w-full mx-auto">
       <div className={"flex-1"}>
         <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
         <p className="mb-6">
